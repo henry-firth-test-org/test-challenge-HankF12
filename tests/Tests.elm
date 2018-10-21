@@ -16,7 +16,19 @@ tests =
                 test "does not contain number" <|
                     \() -> Expect.false "a singleton set of 1 should not contain 2" ((singletonSet 1) 2)
             ]
-            -- union
+        , describe "union"
+            [
+                test "contains numbers" <|
+                    \() -> Expect.true "a union should contain all numbers in its constituent sets" (
+                        ((union (singletonSet 1) (singletonSet 2)) 1) &&
+                        ((union (singletonSet 1) (singletonSet 2)) 2)
+                    )
+            ,
+                test "does not contain number" <|
+                    \() -> Expect.false "a union should only contain numbers in its constituent sets" (
+                        (union (singletonSet 1) (singletonSet 2)) 3
+                    )
+            ]
             -- intersect
             -- diff
             -- filter
