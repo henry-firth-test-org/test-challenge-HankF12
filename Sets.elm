@@ -8,7 +8,7 @@ module Sets exposing (singletonSet, union, intersect, diff, filter)
 -- Returns the set of the one given element.
 singletonSet : Int -> (Int -> Bool)
 singletonSet element =
-    Debug.todo "Please implement this function"
+    \value -> element == value
 
 
 -- Returns the union of the two given sets
