@@ -15,7 +15,7 @@ singletonSet element =
 -- I.e. a set of all elements that are in either `set1` or `set2`.
 union : (Int -> Bool) -> (Int -> Bool) -> (Int -> Bool)
 union set1 set2 =
-    Debug.todo "Please implement this function"
+    \value -> (set1 value) || (set2 value)
 
 
 -- Returns the intersect of the two given sets
