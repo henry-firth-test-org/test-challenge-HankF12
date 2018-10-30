@@ -41,7 +41,7 @@ Define and test the following methods stubbed out in `sets.js`:
  * diff
  * filter
 
-## Release 2, Operating on Collections (TODO)
+## Release 2, Operating on Collections (TO-DO)
 
 You have the basic set operations, now we want operations that can operate on the elements in the sets.
 
@@ -50,6 +50,6 @@ You have the basic set operations, now we want operations that can operate on th
  * map
  * toString
 
-## Release 3, Bounded (TODO)
+## Release 3, Bounded (TO-DO)
 
 You'll notice these methods only operate on bounded integers. Why is this necessary? Describe your thoughts in `note.md`.
